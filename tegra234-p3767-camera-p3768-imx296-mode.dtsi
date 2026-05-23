@@ -1,0 +1,42 @@
+mode0 { /* IMX296_MODE_1456x1088_60FPS */
+	mclk_khz = "37125";
+	num_lanes = "1";
+	tegra_sinterface = "serial_c";
+	phy_mode = "DPHY";
+	discontinuous_clk = "yes";
+	dpcm_enable = "false";
+	cil_settletime = "0";
+	lane_polarity = "0";
+
+	active_w = "1456";
+	active_h = "1088";
+	mode_type = "bayer";
+	pixel_phase = "gbrg";
+	csi_pixel_bit_depth = "10";
+	dynamic_pixel_bit_depth = "10";
+
+	readout_orientation = "0";
+	line_length = "1100";
+	inherent_gain = "1";
+	pix_clk_hz = "118800000";
+
+	gain_factor = "1";
+	min_gain_val = "0";
+	max_gain_val = "480";
+	step_gain_val = "1";
+	default_gain = "0";
+	min_hdr_ratio = "1";
+	max_hdr_ratio = "1";
+	framerate_factor = "1000000";
+	min_framerate = "1000000";
+	max_framerate = "60000000";
+	default_framerate = "30000000";
+	step_framerate = "1";
+	exposure_factor = "1000000";
+	min_exp_time = "30";
+	max_exp_time = "660000";
+	step_exp_time = "1";
+	default_exp_time = "16667";
+
+	embedded_metadata_height = "2";
+};
